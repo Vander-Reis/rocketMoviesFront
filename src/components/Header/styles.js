@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-    grid-area: header;
-    height: 105px;
+export const Container = styled.header`
+    padding: 0 123px;
     width: 100%;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: ${({theme}) => theme.COLORS.BACKGROUND_700};
+    height: 116px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 80px;
+    gap: 64px;
+    border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_300};
+    
+    grid-area: header;
     
 
     > h1 {
@@ -20,8 +21,9 @@ export const Container = styled.div`
 
 export const Profile = styled.div`
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    gap: 9px;
+    gap: 10px;
     
 
     > img {
@@ -30,12 +32,10 @@ export const Profile = styled.div`
     }
 
     > div {
-        width: 200px;
-        text-align: end;
+        width: max-content;
         display: flex;
         flex-direction: column;
-        margin-left: 16px;
-        line-height: 24px;
+        align-items: flex-end;
         span {
             font-size: 14px;
             color: ${({ theme }) => theme.COLORS.GRAY_100};

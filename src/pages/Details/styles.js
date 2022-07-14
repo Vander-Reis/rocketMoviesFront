@@ -12,20 +12,9 @@ export const Container = styled.div`
 
     > main {
         grid-area: content;
-        overflow-y: auto;
         padding: 64px 0;
     }
 
-    > main::-webkit-scrollbar {
-        width: 8px;
-        height: 96px;
-    }
-
-
-    > main::-webkit-scrollbar-thumb {
-        background-color: ${({theme}) => theme.COLORS.PINK};
-        border-radius: 8px;
-    }
 `;
 
 export const Content = styled.div`
