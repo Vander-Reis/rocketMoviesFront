@@ -4,7 +4,7 @@ import { Tag } from '../Tag';
 
 export function MovieCard({ data, ...rest }){
     return(
-        <Container {...rest}>
+        <Container {...rest} to='/details/10'>
             <h2>{data.title}</h2>
             <Ratings rating={data.rating}/>
             <p>{data.description}</p>

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100%;
     display: flex;
-    gap: 16px;
     align-items: center;
     background: ${({theme}) => theme.COLORS.BACKGROUND_500};
     color: ${({theme}) => theme.COLORS.GRAY_100};
@@ -18,6 +17,7 @@ export const Container = styled.div`
         color: ${({theme}) => theme.COLORS.WHITE};
         background: transparent;
         border: none;
+        font-size: 18px;
 
         &::placeholder {
             color: ${({theme}) => theme.COLORS.GRAY_100};

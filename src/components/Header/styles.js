@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.header`
     padding: 0 123px;
@@ -19,7 +20,7 @@ export const Container = styled.header`
     }
 `;
 
-export const Profile = styled.div`
+export const Profile = styled(Link)`
     display: flex;
     justify-content: flex-end;
     align-items: center;

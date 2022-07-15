@@ -11,6 +11,7 @@ import { ButtonText } from "../../components/ButtonText";
 import { Ratings } from "../../components/Ratings";
 import { Tag } from "../../components/Tag";
 import { FiClock } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 export function Details() {
   return (
@@ -20,10 +21,10 @@ export function Details() {
       <main>
         <Content>
           <div className="buttons">
-            <a href="#">
+            <Link to="/">
               <FiArrowLeft />
               Voltar
-            </a>
+            </Link>
 
             <ButtonText title="Excluir filme" isActive />
           </div>
