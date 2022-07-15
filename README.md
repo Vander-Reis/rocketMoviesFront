@@ -28,6 +28,10 @@
 ## About
 Site criado com proposito de armazenar os filmes que você mais gosta.
 
+![Screenshot_1](https://user-images.githubusercontent.com/77352309/179308959-6d0b8e0e-2e74-4eb9-a37c-d17738c0a377.png)
+
+
+
 ## Tech Stack
 <img src="https://img.shields.io/badge/Css3-05122A?style=flat&logo=css3" alt="css3 Badge" height="25">&nbsp;
 <img src="https://img.shields.io/badge/Html5-05122A?style=flat&logo=html5" alt="html5 Badge" height="25">&nbsp;
