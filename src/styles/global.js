@@ -16,7 +16,7 @@ export default createGlobalStyle`
 
     body::-webkit-scrollbar {
         width: 8px;
-        height: 96px;
+        height: 8px;
     }
 
 

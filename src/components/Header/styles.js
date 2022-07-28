@@ -16,16 +16,29 @@ export const Container = styled.header`
 
     > h1 {
         color: ${({theme}) => theme.COLORS.PINK};
-        margin-right: 64px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+    
+        > div {
+            width: max-content;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            button {
+                background: transparent;
+                color: ${({ theme }) => theme.COLORS.WHITE};
+            }
+        }
     }
 `;
 
 export const Profile = styled(Link)`
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    
 
     > img {
         width: 64px;
@@ -33,10 +46,6 @@ export const Profile = styled(Link)`
     }
 
     > div {
-        width: max-content;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
         span {
             font-size: 14px;
             color: ${({ theme }) => theme.COLORS.GRAY_100};
