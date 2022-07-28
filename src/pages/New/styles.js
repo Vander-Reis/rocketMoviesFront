@@ -35,6 +35,16 @@ export const Container = styled.div`
 export const Form = styled.form`
     width: 100%; 
 
+    > header {
+        button {
+        background: transparent;
+        color: ${({theme}) => theme.COLORS.WHITE};
+        display: flex;
+        align-self: center;
+        gap: 8px;
+    }
+    }
+
     > .input-content {
         display: flex;
         align-items: center;

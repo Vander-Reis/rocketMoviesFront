@@ -36,13 +36,37 @@ Site criado com proposito de armazenar os filmes que você mais gosta.
 
 ## Installation
 To Install this project, follow the steps above:
+
+RoketMovieFrontEnd
 ```bash
 $ git clone https://github.com/Vander-Reis/rocketMoviesFront
 ```
 
+RocketMovieBackEnd
+```bash
+$ git clone https://github.com/Vander-Reis/rocketMoviesApi
+```
+
 ## Usage
 To use this project, follow the steps above:
-```bash
+
+```bash backEnd
+// instalar as dependencias
+$ npm install 
+
+//para ligar o servidor e executar a criação da tabela users
+$ npm run dev 
+
+// pare o servidor e execute o seguinte comando para criar as outras tabelas do banco de dados
+$ npx knex migrate:latest
+
+// rodar o servidor novamente 
+$ npm run dev 
+
+
+```
+
+```bash FrontEnd
 $ npm install 
 
 $ npm run dev

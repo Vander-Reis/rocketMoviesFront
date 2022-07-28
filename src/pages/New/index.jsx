@@ -20,6 +20,10 @@ export function New() {
 
   const navigate = useNavigate();
 
+  function handleBack() {
+    navigate(-1);
+  }
+
   function handleAddTag() {
     setTags((prevState) => [...prevState, newTag]);
     setNewTag("");
@@ -62,10 +66,10 @@ export function New() {
       <main>
         <Form>
           <header>
-            <Link to="/">
+            <button onClick={handleBack}>
               <FiArrowLeft />
               Voltar
-            </Link>
+            </button>
 
             <h1>Novo filme</h1>
           </header>
@@ -110,7 +114,7 @@ export function New() {
           </Section>
 
           <div className="buttons">
-            <Button className="button-delete" title="Excluir filme" />
+            <Button className="button-delete" onClick={handleBack} title="Excluir filme" />
             <Button title="Salvar alterações" onClick={handleNewMovie} />
           </div>
         </Form>

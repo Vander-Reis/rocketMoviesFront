@@ -5,14 +5,21 @@ import { Input } from "../../components/Input";
 import { api } from "../../service/api";
 import { useAuth } from "../../hook/auth";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 export function Home() {
   const [movies, setMovies] = useState([]);
 
   const { signOut, user } = useAuth();
 
+  const navigate = useNavigate();
+
   const avatarUrl = user.avatar ? `${api.defaults.baseURL}files/${user.avatar}` : avatarPlaceholder;
 
   const [search, setSearch] = useState("");
+
+  function handleDetails(id){
+    navigate(`/details/${id}`);
+  }
 
   useEffect(() => {
     async function fetchMovieNotes() {
@@ -58,7 +65,7 @@ export function Home() {
             <MovieCard
               key={String(movie.ID)}
               data={movie}
-              // onClick={() => {handleDetails(movie.id);}}
+              onClick={() => {handleDetails(movie.ID);}}
             />
           ))}
         </section>

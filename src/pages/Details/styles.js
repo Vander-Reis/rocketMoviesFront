@@ -27,13 +27,14 @@ export const Content = styled.div`
         justify-content: space-between;
         align-items: center;
 
-        a {
+        button {
             display: flex;
             align-items: center;
             gap: 8px;
             font-size: 16px;
             line-height: 21px;
             color: ${({theme}) => theme.COLORS.PINK};
+            background: transparent;
 
             svg {
                 font-size: 16px;
@@ -72,6 +73,7 @@ export const AuthorInfo = styled.div`
 
         img {
             width: 16px;
+            height: 16px;
             border-radius: 50%;
         }
 
