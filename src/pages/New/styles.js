@@ -56,12 +56,13 @@ export const Form = styled.form`
     }
 
     .tags {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         align-items: center;
         gap: 24px;
 
         background: #0D0C0F;
-        height: 88px;
+        /* height: 88px; */
         padding: 16px;
         border-radius: 10px;
     }

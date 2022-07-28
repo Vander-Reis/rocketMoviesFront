@@ -39,9 +39,12 @@ export const Container = styled.header`
 `;
 
 export const Profile = styled(Link)`
+     width: 64px;
+    height: 64px;
 
     > img {
         width: 64px;
+        height: 64px;
         border-radius: 50%;
     }
 

@@ -12,6 +12,11 @@ export const Container = styled.div`
         align-items: center;
         padding: 0 144px;
 
+        button {
+            background: transparent;
+            border: none;
+        }
+
         svg {
             color: ${({ theme }) => theme.COLORS.PINK};
             font-size: 24px;

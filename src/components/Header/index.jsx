@@ -1,16 +1,15 @@
 import { Container, Profile } from "./styles";
-import { Input } from "../Input";
 import { useAuth } from "../../hook/auth";
+import { api } from "../../service/api";
 export function Header() {
   const { signOut, user } = useAuth();
 
-  
+  const avatarUrl = user.avatar ? `${api.defaults.baseURL}files/${user.avatar}` : avatarPlaceholder;
 
   return (
     <Container>
       <h1>RocketMovies</h1>
-      <Input placeholder="Pesquisar pelo título" />
-
+    
       <div className="content">
         <div>
           <strong>{user.name}</strong>
@@ -18,7 +17,7 @@ export function Header() {
         </div>
 
         <Profile to="/profile">
-          <img src="https://github.com/Vander-Reis.png" alt="Foto do usuário" />
+          <img src={avatarUrl} alt="Foto do usuário" />
         </Profile>
       </div>
     </Container>

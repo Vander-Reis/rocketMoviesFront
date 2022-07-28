@@ -8,7 +8,6 @@ import {useAuth} from "../hook/auth";
 export function Routes() {
 
     const { user } = useAuth();
-    console.log(user);
 
     return(
         <BrowserRouter>
