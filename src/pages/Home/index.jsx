@@ -6,6 +6,7 @@ import { api } from "../../service/api";
 import { useAuth } from "../../hook/auth";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import avatarPlaceholder from '../../assets/avatar_placeholder.svg';
 export function Home() {
   const [movies, setMovies] = useState([]);
 

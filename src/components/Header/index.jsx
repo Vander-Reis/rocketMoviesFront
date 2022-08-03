@@ -1,6 +1,7 @@
 import { Container, Profile } from "./styles";
 import { useAuth } from "../../hook/auth";
 import { api } from "../../service/api";
+import avatarPlaceholder from '../../assets/avatar_placeholder.svg';
 export function Header() {
   const { signOut, user } = useAuth();
 
